@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=3 uid="uid://brtrict7fsv38"]
+
+[ext_resource type="Script" path="res://scripts/menuScripts/instructions_menu.gd" id="1_5c2m0"]
+[ext_resource type="FontFile" uid="uid://c5usytkhau5qg" path="res://assets/misc/Lilliput Steps.otf" id="1_fdb3w"]
+[ext_resource type="StyleBox" uid="uid://b5mq8sf7g0a5r" path="res://resources/new_style_box_empty.tres" id="3_5jrio"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_caow0"]
+bg_color = Color(0.0235294, 0.27451, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.0755101, 0.0755101, 0.0755101, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y1kmt"]
+bg_color = Color(0.02459, 0.274543, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.0755101, 0.0755101, 0.0755101, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j1nl2"]
+bg_color = Color(0, 0.184314, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.0755101, 0.0755101, 0.0755101, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2eimd"]
+bg_color = Color(0.0044464, 0.106597, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.0755101, 0.0755101, 0.0755101, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="InstructionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5c2m0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -663.5
+offset_top = -372.0
+offset_right = 663.5
+offset_bottom = 217.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_fdb3w")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_caow0")
+text = "Você passará por 20 questões que 
+deveram ser respondidas corretamente
+para vencer. Errar uma delas
+resultará em ter que recomeçar
+desde o início. Boa sorte e 
+divirta-se! (talvez)
+
+Mantenha o aúdio ligado para
+melhor experiência."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 638.0
+offset_right = 739.0
+offset_bottom = 715.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_fdb3w")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_y1kmt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_j1nl2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2eimd")
+theme_override_styles/focus = ExtResource("3_5jrio")
+text = "Voltar
+"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=3 uid="uid://cv2huo06leo8s"]
+
+[ext_resource type="FontFile" uid="uid://c5usytkhau5qg" path="res://assets/misc/Lilliput Steps.otf" id="1_1xbgi"]
+[ext_resource type="Script" path="res://scripts/menuScripts/game_over_menu.gd" id="1_v2gg5"]
+[ext_resource type="StyleBox" uid="uid://pl7u85rxhfye" path="res://resources/new_style_box_flat_normal.tres" id="2_id6td"]
+[ext_resource type="StyleBox" uid="uid://dirr82n77phow" path="res://resources/new_style_box_flat_hover.tres" id="3_j8irs"]
+[ext_resource type="StyleBox" uid="uid://cg54yh1dsa1xo" path="res://resources/new_style_box_flat_pressed.tres" id="4_7uj0x"]
+[ext_resource type="StyleBox" uid="uid://b5mq8sf7g0a5r" path="res://resources/new_style_box_empty.tres" id="5_h5awt"]
+[ext_resource type="AudioStream" uid="uid://cei64bhd2ht7k" path="res://assets/sounds/faustao-errou.mp3" id="7_pqid2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_80yin"]
+bg_color = Color(0.0235294, 0.27451, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.0755101, 0.0755101, 0.0755101, 1)
+
+[node name="GameOverMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v2gg5")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -646.0
+offset_top = 30.0
+offset_right = 646.0
+offset_bottom = 197.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_1xbgi")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_80yin")
+text = "Perdeste otário!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = 19.0
+offset_right = 234.0
+offset_bottom = 231.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_1xbgi")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = ExtResource("2_id6td")
+theme_override_styles/hover = ExtResource("3_j8irs")
+theme_override_styles/pressed = ExtResource("4_7uj0x")
+theme_override_styles/focus = ExtResource("5_h5awt")
+text = "Recomeçar"
+
+[node name="AudioErrou" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_pqid2")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

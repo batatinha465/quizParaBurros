@@ -1,0 +1,191 @@
+[gd_scene load_steps=29 format=3 uid="uid://ckjuhpt5an46i"]
+
+[ext_resource type="PackedScene" uid="uid://chcmtwtia1s41" path="res://scenes/levels/base_level.tscn" id="1_4ruma"]
+[ext_resource type="Script" path="res://scripts/levelScripts/level_14.gd" id="2_ykkeb"]
+[ext_resource type="FontFile" uid="uid://c5usytkhau5qg" path="res://assets/misc/Lilliput Steps.otf" id="2_yvvha"]
+[ext_resource type="StyleBox" uid="uid://pl7u85rxhfye" path="res://resources/new_style_box_flat_normal.tres" id="3_pkp20"]
+[ext_resource type="StyleBox" uid="uid://dirr82n77phow" path="res://resources/new_style_box_flat_hover.tres" id="4_dwng6"]
+[ext_resource type="StyleBox" uid="uid://cg54yh1dsa1xo" path="res://resources/new_style_box_flat_pressed.tres" id="5_hrc0m"]
+[ext_resource type="StyleBox" uid="uid://b5mq8sf7g0a5r" path="res://resources/new_style_box_empty.tres" id="6_57nuy"]
+[ext_resource type="Texture2D" uid="uid://cscthjlrbu083" path="res://assets/misc/animationFramesHeavy/frame_00_delay-0.04s.png" id="7_r3aw5"]
+[ext_resource type="Texture2D" uid="uid://ddlhyxivnxant" path="res://assets/misc/animationFramesHeavy/frame_01_delay-0.04s.png" id="8_5whpm"]
+[ext_resource type="Texture2D" uid="uid://b2ciars5uhgo3" path="res://assets/misc/animationFramesHeavy/frame_02_delay-0.04s.png" id="9_1kjs0"]
+[ext_resource type="Texture2D" uid="uid://crvlwircfx2j2" path="res://assets/misc/animationFramesHeavy/frame_03_delay-0.04s.png" id="10_up5uj"]
+[ext_resource type="Texture2D" uid="uid://bjcpy7216dxsy" path="res://assets/misc/animationFramesHeavy/frame_04_delay-0.04s.png" id="11_7740x"]
+[ext_resource type="Texture2D" uid="uid://b6qo0q78o3ay4" path="res://assets/misc/animationFramesHeavy/frame_05_delay-0.04s.png" id="12_rsjop"]
+[ext_resource type="Texture2D" uid="uid://bydca8dtr1lik" path="res://assets/misc/animationFramesHeavy/frame_06_delay-0.04s.png" id="13_x1dwb"]
+[ext_resource type="Texture2D" uid="uid://fjmm0bru5jf1" path="res://assets/misc/animationFramesHeavy/frame_07_delay-0.04s.png" id="14_mt7lh"]
+[ext_resource type="Texture2D" uid="uid://cpcefehlywh07" path="res://assets/misc/animationFramesHeavy/frame_08_delay-0.04s.png" id="15_5wxk6"]
+[ext_resource type="Texture2D" uid="uid://4ymqrxnqvmje" path="res://assets/misc/animationFramesHeavy/frame_09_delay-0.04s.png" id="16_y13oa"]
+[ext_resource type="Texture2D" uid="uid://b3v75ro6fat61" path="res://assets/misc/animationFramesHeavy/frame_10_delay-0.04s.png" id="17_6l3df"]
+[ext_resource type="Texture2D" uid="uid://cg64h6boscwl6" path="res://assets/misc/animationFramesHeavy/frame_11_delay-0.04s.png" id="18_mo5cq"]
+[ext_resource type="Texture2D" uid="uid://deus7s4lfhjes" path="res://assets/misc/animationFramesHeavy/frame_12_delay-0.04s.png" id="19_x1axr"]
+[ext_resource type="Texture2D" uid="uid://4anasighlq0s" path="res://assets/misc/animationFramesHeavy/frame_13_delay-0.04s.png" id="20_72ppd"]
+[ext_resource type="Texture2D" uid="uid://cjnlnygmhhgsa" path="res://assets/misc/animationFramesHeavy/frame_14_delay-0.04s.png" id="21_qkxaw"]
+[ext_resource type="Texture2D" uid="uid://odom50fd6wns" path="res://assets/misc/animationFramesHeavy/frame_15_delay-0.04s.png" id="22_xjeu7"]
+[ext_resource type="Texture2D" uid="uid://bre4xviv214sl" path="res://assets/misc/animationFramesHeavy/frame_16_delay-0.04s.png" id="23_q8dsd"]
+[ext_resource type="Texture2D" uid="uid://ov5j4s80ykun" path="res://assets/misc/animationFramesHeavy/frame_17_delay-0.04s.png" id="24_q0f6t"]
+[ext_resource type="Texture2D" uid="uid://bumf01x6w5syr" path="res://assets/misc/animationFramesHeavy/frame_18_delay-0.04s.png" id="25_j3dh0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o7im0"]
+bg_color = Color(0.0235294, 0.27451, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.0755101, 0.0755101, 0.0755101, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_33jfe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_r3aw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5whpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1kjs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_up5uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7740x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rsjop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_x1dwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_mt7lh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5wxk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_y13oa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6l3df")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_mo5cq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_x1axr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_72ppd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qkxaw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xjeu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_q8dsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_q0f6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_j3dh0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="Level_14" instance=ExtResource("1_4ruma")]
+script = ExtResource("2_ykkeb")
+
+[node name="Label" type="Label" parent="." index="0"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -646.0
+offset_top = 30.0
+offset_right = 646.0
+offset_bottom = 197.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_yvvha")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_o7im0")
+text = "14) Qual o nome dessa dança?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button1" type="Button" parent="." index="1"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 372.0
+offset_right = 610.0
+offset_bottom = 472.0
+theme_override_fonts/font = ExtResource("2_yvvha")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("3_pkp20")
+theme_override_styles/hover = ExtResource("4_dwng6")
+theme_override_styles/pressed = ExtResource("5_hrc0m")
+theme_override_styles/focus = ExtResource("6_57nuy")
+text = "Cazotsky Kick"
+
+[node name="Button2" type="Button" parent="." index="2"]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 372.0
+offset_right = 1070.0
+offset_bottom = 472.0
+theme_override_fonts/font = ExtResource("2_yvvha")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("3_pkp20")
+theme_override_styles/hover = ExtResource("4_dwng6")
+theme_override_styles/pressed = ExtResource("5_hrc0m")
+theme_override_styles/focus = ExtResource("6_57nuy")
+text = "Kasotsky Kick"
+
+[node name="Button3" type="Button" parent="." index="3"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 513.0
+offset_right = 610.0
+offset_bottom = 613.0
+theme_override_fonts/font = ExtResource("2_yvvha")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("3_pkp20")
+theme_override_styles/hover = ExtResource("4_dwng6")
+theme_override_styles/pressed = ExtResource("5_hrc0m")
+theme_override_styles/focus = ExtResource("6_57nuy")
+text = "Kazotsky Kick"
+
+[node name="Button4" type="Button" parent="." index="4"]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 513.0
+offset_right = 1070.0
+offset_bottom = 613.0
+theme_override_fonts/font = ExtResource("2_yvvha")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("3_pkp20")
+theme_override_styles/hover = ExtResource("4_dwng6")
+theme_override_styles/pressed = ExtResource("5_hrc0m")
+theme_override_styles/focus = ExtResource("6_57nuy")
+text = "Remoleixon
+"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="5"]
+position = Vector2(663, 288)
+scale = Vector2(0.95, 0.95)
+sprite_frames = SubResource("SpriteFrames_33jfe")
+frame = 7
+frame_progress = 0.530212
+speed_scale = 0.9
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
