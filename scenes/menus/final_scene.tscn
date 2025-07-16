@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bbf1kirutfadq"]
 
-[ext_resource type="Script" path="res://scenes/menus/final_scene.gd" id="1_qyqmf"]
+[ext_resource type="Script" path="res://scripts/menuScripts/final_scene.gd" id="1_irkym"]
 [ext_resource type="FontFile" uid="uid://c5usytkhau5qg" path="res://assets/misc/Lilliput Steps.otf" id="2_rs66r"]
 [ext_resource type="StyleBox" uid="uid://pl7u85rxhfye" path="res://resources/new_style_box_flat_normal.tres" id="3_ak724"]
 [ext_resource type="StyleBox" uid="uid://dirr82n77phow" path="res://resources/new_style_box_flat_hover.tres" id="4_2n8qk"]
@@ -22,7 +22,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_qyqmf")
+script = ExtResource("1_irkym")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
